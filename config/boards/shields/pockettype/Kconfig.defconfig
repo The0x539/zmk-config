@@ -1,0 +1,6 @@
+if SHIELD_POCKETTYPE
+
+config ZMK_KEYBOARD_NAME
+	default "PocketType"
+
+endif

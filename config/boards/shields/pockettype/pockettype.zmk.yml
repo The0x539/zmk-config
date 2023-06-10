@@ -1,0 +1,8 @@
+file_format: "1"
+id: pockettype
+name: PocketType
+type: shield
+url: https://mechboards.co.uk/products/pockettype
+requires: [pro_micro]
+features:
+  - keys

@@ -13,4 +13,5 @@
 #
 ---
 include:
-  - board: pockettype
+  - board: nice_nano_v2
+    shield: pockettype

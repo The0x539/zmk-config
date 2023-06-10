@@ -1,6 +1,7 @@
 / {
 	chosen {
 		zmk,kscan = &kscan0;
+		zmk,backlight = &backlight;
 	};
 
 	kscan0: kscan_0 {
@@ -29,5 +30,18 @@
 			, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
+	};
+
+	backlight: gpioleds {
+		compatible = "gpio-leds";
+		label = "LEDs";
+		gpio_led_0 {
+			gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
+			label = "PWR";
+		};
+		gpio_led_1 {
+			gpios = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
+			label = "ACT";
+		};
 	};
 };
